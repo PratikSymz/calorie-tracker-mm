@@ -2,6 +2,7 @@ package com.pratiksymz.calorytracker
 
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.padding
 import androidx.compose.material.Scaffold
 import androidx.compose.material.rememberScaffoldState
 import androidx.compose.ui.Modifier
@@ -118,6 +119,7 @@ class TrackerOverviewE2E {
                     scaffoldState = scaffoldState
                 ) {
                     NavHost(
+                        modifier = Modifier.padding(it),
                         navController = navController,
                         startDestination = Route.TRACKER_OVERVIEW
                     ) {
