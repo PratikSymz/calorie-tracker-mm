@@ -8,5 +8,5 @@ apply(from = "$rootDir/base-module.gradle")
 
 // Define its namespace
 android {
-    namespace = "com.example.core"
+    namespace = "com.pratiksymz.core"
 }

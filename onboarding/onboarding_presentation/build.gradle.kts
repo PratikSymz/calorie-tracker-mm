@@ -8,7 +8,7 @@ apply(from = "$rootDir/compose-module.gradle")
 
 // Define its namespace
 android {
-    namespace = "com.example.onboarding_presentation"
+    namespace = "com.pratiksymz.onboarding_presentation"
 }
 
 // Access dependencies from 'core' module

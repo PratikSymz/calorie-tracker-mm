@@ -8,7 +8,7 @@ apply(from = "$rootDir/base-module.gradle")
 
 // Define its namespace
 android {
-    namespace = "com.example.tracker_data"
+    namespace = "com.pratiksymz.tracker_data"
 }
 
 // Access dependencies from 'core' module

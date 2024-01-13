@@ -8,7 +8,7 @@ apply(from = "$rootDir/base-module.gradle")
 
 // Define its namespace
 android {
-    namespace = "com.example.onboarding_domain"
+    namespace = "com.pratiksymz.onboarding_domain"
 }
 
 // Access dependencies from 'core' module

@@ -8,5 +8,5 @@ apply(from = "$rootDir/compose-module.gradle")
 
 // Define its namespace
 android {
-    namespace = "com.example.core_ui"
+    namespace = "com.pratiksymz.core_ui"
 }

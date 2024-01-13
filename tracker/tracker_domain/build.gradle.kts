@@ -1,5 +1,3 @@
-import org.jetbrains.kotlin.config.LanguageFeature
-
 plugins {
     `android-library`
     `kotlin-android`
@@ -10,7 +8,7 @@ apply(from = "$rootDir/base-module.gradle")
 
 // Define its namespace
 android {
-    namespace = "com.example.tracker_domain"
+    namespace = "com.pratiksymz.tracker_domain"
 }
 
 // Access dependencies from 'core' module
