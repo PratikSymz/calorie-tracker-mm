@@ -1,0 +1,31 @@
+name: AndroidBuild
+
+# on: On which event, out workflow should start
+on:
+  pull_request:
+    branches: [ initial_updated ]
+
+  push:
+    branches: [ initial_updated ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4.1.1
+
+      - name: Setup Java JDK
+        uses: actions/setup-java@v4.0.0
+        with:
+          java-version: '18'
+          distribution: 'adopt'
+
+      - name: Build with Gradle
+        run: ./gradlew build
+
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v4.1.0
+        with:
+          name: CalorieTracker.apk
+          path: app/build/outputs/apk/debug/app-debug.apk
